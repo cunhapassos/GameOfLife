@@ -2,7 +2,7 @@ import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
-import GameOfLifeOriginal.Cell;
+
 
 /**
  * Representa um ambiente (environment) do jogo GameOfLife.
