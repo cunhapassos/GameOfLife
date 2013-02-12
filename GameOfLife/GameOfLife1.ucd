@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="GameOfLife1" size="913,167" id="" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D31302047616D654F664C696665">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.2/@sourceConnections.1 //@children.3/@sourceConnections.0" name="GameController" location="330,45" size="123,229" id="/GameController" runTimeClassModel="nextGeneration(),makeCellAlive(II),getHeight(),engine,start(),halt(),board,getWidth(),statistics,isCellAlive(II)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="99,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="board" id="/GameView@board+/GameController@controller|/GameView#board"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="engine" id="/GameEngine@engine+/GameController@|/GameEngine#engine"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="statistics" id="/Statistics@statistics+/GameController@|/Statistics#statistics"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,126">
+      <children xsi:type="editmodel:MethodEditModel" name="getHeight" id="/GameController#getHeight()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWidth" id="/GameController#getWidth()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="halt" id="/GameController#halt()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isCellAlive" id="/GameController#isCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeCellAlive" id="/GameController#makeCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="/GameController#nextGeneration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="start" id="/GameController#start()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GameEngine" location="555,30" size="183,301" id="/GameEngine" runTimeClassModel="cells,validPosition(II),makeCellAlive(II),numberOfAliveCells(),width,GameEngine(II),shouldKeepAlive(II),nextGeneration(),height,shouldRevive(II),recordKill,recordRevive,isCellAlive(II),numberOfNeighborhoodAliveCells(II)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="cells" id="/GameEngine#cells"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="/GameEngine#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="recordKill" id="/GameEngine#recordKill"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="recordRevive" id="/GameEngine#recordRevive"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="width" id="/GameEngine#width"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="160,162">
+      <children xsi:type="editmodel:MethodEditModel" name="GameEngine" id="/GameEngine#GameEngine(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isCellAlive" id="/GameEngine#isCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeCellAlive" id="/GameEngine#makeCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="/GameEngine#nextGeneration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="numberOfAliveCells" id="/GameEngine#numberOfAliveCells()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="numberOfNeighborhoodAliveCells" id="/GameEngine#numberOfNeighborhoodAliveCells(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="shouldKeepAlive" id="/GameEngine#shouldKeepAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="shouldRevive" id="/GameEngine#shouldRevive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="validPosition" id="/GameEngine#validPosition(II)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/GameEngine@engine+/GameController@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="engine" location="0,129" id="/GameEngine@engine+/GameController@|/GameEngine#engine" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - engine" location="512,142" size="36,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="532,166" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,114" id="/GameEngine@engine+/GameController@|/GameController#" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="460,142" size="0,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GameView" location="30,90" size="204,355" id="/GameView" runTimeClassModel="parseOption(Ljava.lang.String;),validPosition(II),printFirstRow(),nEXT_GENERATION,GameView(LGameController;),dEAD_CELL,printOptions(),halt(),aLIVE_CELL,nextGeneration(),mAKE_CELL_ALIVE,makeCellAlive(),printLine(),update(),lINE,hALT,iNVALID_OPTION">
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="lINE" id="/GameView#lINE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEAD_CELL" id="/GameView#dEAD_CELL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aLIVE_CELL" id="/GameView#aLIVE_CELL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iNVALID_OPTION" id="/GameView#iNVALID_OPTION"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mAKE_CELL_ALIVE" id="/GameView#mAKE_CELL_ALIVE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nEXT_GENERATION" id="/GameView#nEXT_GENERATION"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="hALT" id="/GameView#hALT"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,180">
+      <children xsi:type="editmodel:MethodEditModel" name="GameView" id="/GameView#GameView(LGameController;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="/GameView#update()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printOptions" id="/GameView#printOptions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeCellAlive" id="/GameView#makeCellAlive()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="/GameView#nextGeneration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="halt" id="/GameView#halt()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="validPosition" id="/GameView#validPosition(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseOption" id="/GameView#parseOption(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printLine" id="/GameView#printLine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printFirstRow" id="/GameView#printFirstRow()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/GameView@board+/GameController@controller" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="board" location="204,91" id="/GameView@board+/GameController@controller|/GameView#board" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - board" location="241,164" size="33,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="241,188" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="controller" location="0,136" id="/GameView@board+/GameController@controller|/GameController#controller" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + controller" location="274,164" size="49,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="317,188" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="/GameView-Standard::Call->/GameController*/GameView-Soyatec::Import->/GameController" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="52,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,43"/>
+      <bendpoints secondRelativeDimension="-135,-58" firstRelativeDimension="113,-60"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Statistics" location="315,345" size="138,193" id="/Statistics" runTimeClassModel="update(Ljava.util.Observable;Ljava.lang.Object;),display(),gameEngine,revivedCells,recordKill(),Statistics(Ljava.util.Observable;),recordRevive(),killedCells">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="revivedCells" id="/Statistics#revivedCells"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="killedCells" id="/Statistics#killedCells"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gameEngine" id="/Statistics#gameEngine"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Statistics" id="/Statistics#Statistics(Ljava.util.Observable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="/Statistics#update(Ljava.util.Observable;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="recordRevive" id="/Statistics#recordRevive()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="recordKill" id="/Statistics#recordKill()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="display" id="/Statistics#display()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Statistics@statistics+/GameController@" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="statistics" location="76,0" id="/Statistics@statistics+/GameController@|/Statistics#statistics" attachSource="true" multiplicityLabel="//@children.3/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - statistics" location="398,328" size="45,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="368,328" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="61,229" id="/Statistics@statistics+/GameController@|/GameController#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
