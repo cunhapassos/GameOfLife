@@ -113,7 +113,7 @@ public class GameEngine extends Observable {
 		if (validPosition(i, j)) {
 			cells[i][j].revive();
 			setChanged(); // indica que o estado do objeto mudou.
-			notifyObservers(recordRevive);// inserido p adequar ao padr‹o
+			notifyObservers(recordRevive);// inserido p adequar ao padrao
 											// observer
 		} else {
 			new InvalidParameterException("Invalid position (" + i + ", " + j

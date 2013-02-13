@@ -32,7 +32,7 @@ public class GameView {
 
 	/**
 	 * Atualiza o componente view (representado pela classe GameBoard),
-	 * possivelmente como uma resposta a uma atualização do jogo.
+	 * possivelmente como uma resposta a uma atualizacao do jogo.
 	 */
 	public void update() {
 		printFirstRow();
