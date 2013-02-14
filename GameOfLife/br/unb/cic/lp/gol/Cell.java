@@ -1,3 +1,4 @@
+package br.unb.cic.lp.gol;
 public class Cell {
 	/**
 	 * @uml.property  name="alive"

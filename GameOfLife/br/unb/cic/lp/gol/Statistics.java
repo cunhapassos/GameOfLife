@@ -1,3 +1,4 @@
+package br.unb.cic.lp.gol;
 	import java.util.Observable;
 	import java.util.Observer;
 
