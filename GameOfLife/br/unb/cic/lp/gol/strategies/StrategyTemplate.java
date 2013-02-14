@@ -2,17 +2,15 @@ package br.unb.cic.lp.gol.strategies;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
 
 import br.unb.cic.lp.gol.Cell;
 import br.unb.cic.lp.gol.GameEngine;
-import br.unb.cic.lp.gol.ObserverMessages;
 
 /**
  * Calcula uma nova geracao do ambiente. Padrao Template Method
  */
 
-public abstract class StrategyTemplate extends Observable implements Strategy {
+public abstract class StrategyTemplate implements Strategy {
 	
 	GameEngine engine;		//Toda estrategia depende de alguns parametros especificos do engine
 	Cell[][] cells;
@@ -37,14 +35,10 @@ public abstract class StrategyTemplate extends Observable implements Strategy {
 		}
 		for (Cell cell : mustRevive) {
 			cell.revive();
-			setChanged(); // indica que o estado do objeto mudou.
-			notifyObservers(ObserverMessages.CELL_REVIVE.getMessage());
 		}
 
 		for (Cell cell : mustKill) {
 			cell.kill();
-			setChanged(); // indica que o estado do objeto mudou.
-			notifyObservers(ObserverMessages.CELL_KILL.getMessage());
 		}
 	}
 	

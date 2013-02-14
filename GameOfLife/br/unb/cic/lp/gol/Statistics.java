@@ -71,7 +71,7 @@ package br.unb.cic.lp.gol;
 		public void recordKill() {
 			this.killedCells++;
 		}
-
+		/* Codigo Original
 		public void display() {
 			System.out.println("=================================");
 			System.out.println("           Statistics            ");
@@ -80,5 +80,5 @@ package br.unb.cic.lp.gol;
 			System.out.println("Killed cells: " + killedCells);
 			System.out.println("=================================");
 		}
-
+		*/
 	}
