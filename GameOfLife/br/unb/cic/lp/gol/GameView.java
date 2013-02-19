@@ -150,11 +150,21 @@ public class GameView {
 	private void nextGeneration() {
 		controller.nextGeneration();
 	}
-
+	/*Codigo Original
 	private void halt() {
 		controller.halt();
 	}
-
+	*/
+	//acrescentado p/ adequar ao padr‹o arquitetural MVC
+	private void halt() {
+		System.out.println("=================================");
+		System.out.println("           Statistics            ");
+		System.out.println("=================================");
+		System.out.println("Revived cells: " + controller.getRevivedCells());
+		System.out.println("Killed cells: " + controller.getKilledCells());
+		System.out.println("=================================");
+	}
+	
 	private boolean validPosition(int i, int j) {
 		System.out.println(i);
 		System.out.println(j);

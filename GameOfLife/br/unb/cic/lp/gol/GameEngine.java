@@ -70,7 +70,7 @@ public class GameEngine extends Observable {
 		try {
 			loadAvailableStrategies();
 		} catch (Exception e) {
-			System.out.println("Não foi possível carregar as estratégias :(");
+			System.out.println("Nao foi possivel carregar as estrategias :(");
 		}
 		
 		loadDefaultStrategy();

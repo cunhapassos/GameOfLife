@@ -70,14 +70,23 @@ public class GameController {
 	public void start() {
 		board.update();
 	}
-
+	/* Codigo Original
 	public void halt() {
 		// oops, nao muito legal fazer sysout na classe Controller
 		System.out.println("\n \n");
 		statistics.display();
 		System.exit(0);
 	}
-
+	*/
+	//acrescentado p/ adequar ao padr‹o arquitetural MVC
+	public int getKilledCells(){
+		return statistics.getKilledCells();
+	}
+	
+	public int getRevivedCells() {
+		return statistics.getRevivedCells();
+	}
+	//acrescentado p/ adequar ao padr‹o arquitetural MVC
 	public void makeCellAlive(int i, int j) {
 		try {
 			engine.makeCellAlive(i, j);

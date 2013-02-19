@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="gol" size="892,1492" id="br.unb.cic.lp.gol" metadata="uml2-1.0" initialized="true" scrolledY="482" tag="10" key="32303037303533312D31302047616D654F664C696665">
+  <children xsi:type="editmodel:ClassEditModel" name="AbstractStrategy" location="53,1230" size="129,29" id="br.unb.cic.lp.gol/AbstractStrategy">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Main" location="705,765" size="69,67" id="br.unb.cic.lp.gol/Main">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="46,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="br.unb.cic.lp.gol/Main#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/Main-Standard::Call->br.unb.cic.lp.gol/GameController*br.unb.cic.lp.gol/Main-Standard::Instantiate->br.unb.cic.lp.gol/GameController*br.unb.cic.lp.gol/Main-Soyatec::Import->br.unb.cic.lp.gol/GameController" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import, Call»" size="100,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,33" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,153"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/Main-Standard::Instantiate->br.unb.cic.lp.gol/Statistics*br.unb.cic.lp.gol/Main-Soyatec::Import->br.unb.cic.lp.gol/Statistics" source="//@children.1" target="//@children.6" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="81,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,53" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,46"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/Main-Standard::Instantiate->br.unb.cic.lp.gol/GameView*br.unb.cic.lp.gol/Main-Soyatec::Import->br.unb.cic.lp.gol/GameView" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="81,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="13,66" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="152,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/Main-Standard::Instantiate->br.unb.cic.lp.gol/GameEngine*br.unb.cic.lp.gol/Main-Soyatec::Import->br.unb.cic.lp.gol/GameEngine" source="//@children.1" target="//@children.7" targetEnd="//@children.1/@sourceConnections.3/@children.2" label="//@children.1/@sourceConnections.3/@children.0" sourceEnd="//@children.1/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="81,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,2" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,209"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.1/@sourceConnections.0" name="GameController" location="165,645" size="170,265" id="br.unb.cic.lp.gol/GameController">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,216">
+      <children xsi:type="editmodel:MethodEditModel" name="getAvailableStrategyNames" id="br.unb.cic.lp.gol/GameController#getAvailableStrategyNames()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHeight" id="br.unb.cic.lp.gol/GameController#getHeight()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKilledCells" id="br.unb.cic.lp.gol/GameController#getKilledCells()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRevivedCells" id="br.unb.cic.lp.gol/GameController#getRevivedCells()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStrategyDescriptionByName" id="br.unb.cic.lp.gol/GameController#getStrategyDescriptionByName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStrategyName" id="br.unb.cic.lp.gol/GameController#getStrategyName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWidth" id="br.unb.cic.lp.gol/GameController#getWidth()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isCellAlive" id="br.unb.cic.lp.gol/GameController#isCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeCellAlive" id="br.unb.cic.lp.gol/GameController#makeCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="br.unb.cic.lp.gol/GameController#nextGeneration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCurrentStrategy" id="br.unb.cic.lp.gol/GameController#setCurrentStrategy(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="start" id="br.unb.cic.lp.gol/GameController#start()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameEngine@engine+br.unb.cic.lp.gol/GameController@" source="//@children.2" target="//@children.7" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,47" id="br.unb.cic.lp.gol/GameEngine@engine+br.unb.cic.lp.gol/GameController@|br.unb.cic.lp.gol/GameController#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="engine" location="0,217" id="br.unb.cic.lp.gol/GameEngine@engine+br.unb.cic.lp.gol/GameController@|br.unb.cic.lp.gol/GameEngine#engine" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - engine" location="399,675" size="36,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="419,699" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.unb.cic.lp.gol/Statistics@statistics+br.unb.cic.lp.gol/GameController@" source="//@children.2" target="//@children.6" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,265" id="br.unb.cic.lp.gol/Statistics@statistics+br.unb.cic.lp.gol/GameController@|br.unb.cic.lp.gol/GameController#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="statistics" location="69,0" id="br.unb.cic.lp.gol/Statistics@statistics+br.unb.cic.lp.gol/GameController@|br.unb.cic.lp.gol/Statistics#statistics" multiplicityLabel="//@children.2/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - statistics" location="257,988" size="45,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="227,988" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameController-Standard::Call->br.unb.cic.lp.gol/Statistics*br.unb.cic.lp.gol/GameController-Soyatec::Import->br.unb.cic.lp.gol/Statistics" source="//@children.2" target="//@children.6" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,265" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="36,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameController-Standard::Call->br.unb.cic.lp.gol/GameView*br.unb.cic.lp.gol/GameController-Soyatec::Import->br.unb.cic.lp.gol/GameView" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.3/@children.2" label="//@children.2/@sourceConnections.3/@children.0" sourceEnd="//@children.2/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,205" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,19"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameController-Standard::Call->br.unb.cic.lp.gol/GameEngine*br.unb.cic.lp.gol/GameController-Soyatec::Import->br.unb.cic.lp.gol/GameEngine" source="//@children.2" target="//@children.7" targetEnd="//@children.2/@sourceConnections.4/@children.2" label="//@children.2/@sourceConnections.4/@children.0" sourceEnd="//@children.2/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,27" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,190"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.9/@sourceConnections.0" name="Cell" location="281,50" size="96,103" id="br.unb.cic.lp.gol/Cell">
+    <children xsi:type="editmodel:CompartmentEditModel" size="73,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="alive" id="br.unb.cic.lp.gol/Cell#alive"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="50,36">
+      <children xsi:type="editmodel:MethodEditModel" name="kill" id="br.unb.cic.lp.gol/Cell#kill()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="revive" id="br.unb.cic.lp.gol/Cell#revive()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/Cell-Standard::Call->br.unb.cic.lp.gol/ObserverMessages*br.unb.cic.lp.gol/Cell-Soyatec::Access->br.unb.cic.lp.gol/ObserverMessages" source="//@children.3" target="//@children.5" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="96,71" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,31"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.3 //@children.1/@sourceConnections.2" name="GameView" location="510,831" size="152,427" id="br.unb.cic.lp.gol/GameView" runTimeClassModel="parseOption(Ljava.lang.String;),cHANGE_STRATEGY,validPosition(II),changeStrategy(),printFirstRow(),nEXT_GENERATION,dEAD_CELL,printOptions(),halt(),aLIVE_CELL,nextGeneration(),padding(II),mAKE_CELL_ALIVE,makeCellAlive(),GameView(Lbr.unb.cic.lp.gol.GameController;),printLine(),currentStrategyName,update(),lINE,hALT,iNVALID_OPTION">
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,162">
+      <children xsi:type="editmodel:AttributeEditModel" name="lINE" id="br.unb.cic.lp.gol/GameView#lINE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEAD_CELL" id="br.unb.cic.lp.gol/GameView#dEAD_CELL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aLIVE_CELL" id="br.unb.cic.lp.gol/GameView#aLIVE_CELL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iNVALID_OPTION" id="br.unb.cic.lp.gol/GameView#iNVALID_OPTION"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mAKE_CELL_ALIVE" id="br.unb.cic.lp.gol/GameView#mAKE_CELL_ALIVE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nEXT_GENERATION" id="br.unb.cic.lp.gol/GameView#nEXT_GENERATION"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="cHANGE_STRATEGY" id="br.unb.cic.lp.gol/GameView#cHANGE_STRATEGY"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="hALT" id="br.unb.cic.lp.gol/GameView#hALT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="currentStrategyName" id="br.unb.cic.lp.gol/GameView#currentStrategyName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,216">
+      <children xsi:type="editmodel:MethodEditModel" name="GameView" id="br.unb.cic.lp.gol/GameView#GameView(Lbr.unb.cic.lp.gol.GameController;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="br.unb.cic.lp.gol/GameView#update()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printOptions" id="br.unb.cic.lp.gol/GameView#printOptions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="changeStrategy" id="br.unb.cic.lp.gol/GameView#changeStrategy()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="padding" id="br.unb.cic.lp.gol/GameView#padding(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeCellAlive" id="br.unb.cic.lp.gol/GameView#makeCellAlive()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="br.unb.cic.lp.gol/GameView#nextGeneration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="halt" id="br.unb.cic.lp.gol/GameView#halt()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="validPosition" id="br.unb.cic.lp.gol/GameView#validPosition(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseOption" id="br.unb.cic.lp.gol/GameView#parseOption(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printLine" id="br.unb.cic.lp.gol/GameView#printLine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printFirstRow" id="br.unb.cic.lp.gol/GameView#printFirstRow()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameView-Standard::Call->br.unb.cic.lp.gol/GameController*br.unb.cic.lp.gol/GameView-Soyatec::Import->br.unb.cic.lp.gol/GameController" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,39" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="170,225"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.7/@sourceConnections.1" name="ObserverMessages" location="464,90" size="140,85" id="br.unb.cic.lp.gol/ObserverMessages">
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,36">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="CELL_REVIVE" id="br.unb.cic.lp.gol/ObserverMessages#CELL_REVIVE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="CELL_KILL" id="br.unb.cic.lp.gol/ObserverMessages#CELL_KILL%"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.2/@sourceConnections.2 //@children.1/@sourceConnections.1" name="Statistics" location="181,1005" size="138,175" id="br.unb.cic.lp.gol/Statistics">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="gameEngine" id="br.unb.cic.lp.gol/Statistics#gameEngine"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="killedCells" id="br.unb.cic.lp.gol/Statistics#killedCells"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="revivedCells" id="br.unb.cic.lp.gol/Statistics#revivedCells"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Statistics" id="br.unb.cic.lp.gol/Statistics#Statistics(Ljava.util.Observable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="recordKill" id="br.unb.cic.lp.gol/Statistics#recordKill()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="recordRevive" id="br.unb.cic.lp.gol/Statistics#recordRevive()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="br.unb.cic.lp.gol/Statistics#update(Ljava.util.Observable;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.2/@sourceConnections.4 //@children.1/@sourceConnections.3 //@children.8/@sourceConnections.1 //@children.9/@sourceConnections.1" name="GameEngine" location="442,475" size="170,265" id="br.unb.cic.lp.gol/GameEngine">
+    <children xsi:type="editmodel:CompartmentEditModel" size="60,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="br.unb.cic.lp.gol/GameEngine#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="width" id="br.unb.cic.lp.gol/GameEngine#width"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,180">
+      <children xsi:type="editmodel:MethodEditModel" name="GameEngine" id="br.unb.cic.lp.gol/GameEngine#GameEngine(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAvailableStrategyNames" id="br.unb.cic.lp.gol/GameEngine#getAvailableStrategyNames()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCurrentStrategyName" id="br.unb.cic.lp.gol/GameEngine#getCurrentStrategyName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStrategyDescriptionByName" id="br.unb.cic.lp.gol/GameEngine#getStrategyDescriptionByName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isCellAlive" id="br.unb.cic.lp.gol/GameEngine#isCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeCellAlive" id="br.unb.cic.lp.gol/GameEngine#makeCellAlive(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="br.unb.cic.lp.gol/GameEngine#nextGeneration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="numberOfAliveCells" id="br.unb.cic.lp.gol/GameEngine#numberOfAliveCells()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCurrentStrategyByName" id="br.unb.cic.lp.gol/GameEngine#setCurrentStrategyByName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="validPosition" id="br.unb.cic.lp.gol/GameEngine#validPosition(II)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameEngine-Standard::Call->br.unb.cic.lp.gol/Cell*br.unb.cic.lp.gol/GameEngine-Standard::Instantiate->br.unb.cic.lp.gol/Cell*br.unb.cic.lp.gol/GameEngine-Soyatec::Import->br.unb.cic.lp.gol/Cell" source="//@children.7" target="//@children.3" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import, Call»" size="100,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="33,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,103"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol/GameEngine-Standard::Call->br.unb.cic.lp.gol/ObserverMessages*br.unb.cic.lp.gol/GameEngine-Soyatec::Access->br.unb.cic.lp.gol/ObserverMessages" source="//@children.7" target="//@children.5" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="StrategyTemplate" location="262,309" size="133,167" id="br.unb.cic.lp.gol.strategies/StrategyTemplate">
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="cells" id="br.unb.cic.lp.gol.strategies/StrategyTemplate#cells"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="engine" id="br.unb.cic.lp.gol.strategies/StrategyTemplate#engine"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mustKill" id="br.unb.cic.lp.gol.strategies/StrategyTemplate#mustKill"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mustRevive" id="br.unb.cic.lp.gol.strategies/StrategyTemplate#mustRevive"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,36">
+      <children xsi:type="editmodel:MethodEditModel" name="init" id="br.unb.cic.lp.gol.strategies/StrategyTemplate#init(Lbr.unb.cic.lp.gol.GameEngine;[[Lbr.unb.cic.lp.gol.Cell;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="br.unb.cic.lp.gol.strategies/StrategyTemplate#nextGeneration(II)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol.strategies/StrategyTemplate-Standard::Call->br.unb.cic.lp.gol/Cell*br.unb.cic.lp.gol.strategies/StrategyTemplate-Soyatec::Import->br.unb.cic.lp.gol/Cell" source="//@children.8" target="//@children.3" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,103"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol.strategies/StrategyTemplate-Standard::Call->br.unb.cic.lp.gol/GameEngine*br.unb.cic.lp.gol.strategies/StrategyTemplate-Soyatec::Import->br.unb.cic.lp.gol/GameEngine" source="//@children.8" target="//@children.7" targetEnd="//@children.8/@sourceConnections.1/@children.2" label="//@children.8/@sourceConnections.1/@children.0" sourceEnd="//@children.8/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,166" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.unb.cic.lp.gol.strategies/Strategy&lt;-br.unb.cic.lp.gol.strategies/StrategyTemplate" source="//@children.8" target="//@children.9" targetEnd="//@children.8/@sourceConnections.2/@children.1" sourceEnd="//@children.8/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,131" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,35"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.8/@sourceConnections.2" name="Strategy" location="78,405" size="110,159" id="br.unb.cic.lp.gol.strategies/Strategy">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,90">
+      <children xsi:type="editmodel:MethodEditModel" name="getCharacter" id="br.unb.cic.lp.gol.strategies/Strategy#getCharacter()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getName" id="br.unb.cic.lp.gol.strategies/Strategy#getName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRule" id="br.unb.cic.lp.gol.strategies/Strategy#getRule()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="init" id="br.unb.cic.lp.gol.strategies/Strategy#init(Lbr.unb.cic.lp.gol.GameEngine;[[Lbr.unb.cic.lp.gol.Cell;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextGeneration" id="br.unb.cic.lp.gol.strategies/Strategy#nextGeneration(II)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol.strategies/Strategy-Soyatec::Import->br.unb.cic.lp.gol/Cell" source="//@children.9" target="//@children.3" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="35,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="95,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="21,103"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.unb.cic.lp.gol.strategies/Strategy-Soyatec::Import->br.unb.cic.lp.gol/GameEngine" source="//@children.9" target="//@children.7" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="35,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,114" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,44"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
